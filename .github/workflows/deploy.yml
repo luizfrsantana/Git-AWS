@@ -1,9 +1,11 @@
 name: Deploy to S3
 on: [push, pull_request]
 
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    environment: test
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
