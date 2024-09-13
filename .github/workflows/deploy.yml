@@ -14,4 +14,4 @@ jobs:
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: us-east-1
       - name: Sync files to S3
-        run: aws s3 sync ./build s3://mywebsite-12sep --delete
+        run: aws s3 sync ./build s3://mywebsite-12sep-1 --delete
